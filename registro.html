@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div id="imagen">
+
+        </div>
+        <div id="menu">
+            <div id="ventanas">
+                <button id="seleccion" onclick="mostrarSeccion('registrar')">Registrar Vehículo</button>
+                <button onclick="mostrarSeccion('retirar')">Retirar Vehículo</button>
+                <button onclick="mostrarSeccion('administrar')">Administrar Vehículos</button>
+                <button onclick="mostrarSeccion('Balance')">Balance</button>
+            </div>
+            <div id="panel">
+                <h2>REGISTRO VEHICULO</h2><br>
+                <form action="">
+                    <div class="fila">
+                        <label for="Horaentrada">HORA. ENTRAD.</label>
+                        <input type="text">
+                    </div>
+                    <div class="fila">
+                        <label for="Placa">PLACA</label>
+                        <input type="text">
+                    </div>
+                    <div class="fila">
+                        <label for="Tipodevehiculo">TIPO DE VEHÍCULO</label>
+                        <input type="text">
+                    </div>
+                    <div class="fila">
+                        <label for="Propietario">PROPIETARIO</label>
+                        <input type="text">
+                    </div>
+                    <div class="fila">
+                        <input type="submit" value="REGISTRAR VEHICULO">
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

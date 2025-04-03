@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance</title>
+    <link rel="stylesheet" href="vehiculos.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div id="imagen">
+        </div>
+        <div id="menu">
+            <div id="ventanas">
+                <button onclick="mostrarSeccion('registrar')">Registrar Vehículo</button>
+                <button onclick="mostrarSeccion('retirar')">Retirar Vehículo</button>
+                <button onclick="mostrarSeccion('administrar')">Administrar Vehículos</button>
+                <button id="seleccion" onclick="mostrarSeccion('Balance')">Balance</button>
+            </div>
+            <div id="panel">
+                <h2>BALANCE</h2><br>
+                <form action="">
+                    <div class="fila">
+                        <label for="Horaentrada">ING. SEMANAL</label>
+                        <input type="text">
+                    </div>
+                    <div class="fila">
+                        <label for="Horaentrada">ING MENSUAL</label>
+                        <input type="text">
+                    </div>
+                    <div class="fila">
+                        <label for="Horaentrada">ING DIARIO</label>
+                        <input type="text">
+                    </div>                                       
+            </div>
+        </div>
+    </div>
+</body>
+</html>

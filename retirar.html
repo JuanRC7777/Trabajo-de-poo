@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retirar</title>
+    <link rel="stylesheet" href="retirar.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div id="imagen">
+
+        </div>
+        <div id="menu">
+            <div id="ventanas">
+                <button onclick="mostrarSeccion('registrar')">Registrar Vehículo</button>
+                <button id="seleccion" onclick="mostrarSeccion('retirar')">Retirar Vehículo</button>
+                <button onclick="mostrarSeccion('administrar')">Administrar Vehículos</button>
+                <button onclick="mostrarSeccion('Balance')">Balance</button>
+            </div>
+            <div id="panel">
+                <h2>RETIRAR VEHICULO</h2><br>
+                <form action="">
+                    <div class="fila">
+                        <label for="Horaentrada">HORA. SALID</label>
+                        <input type="text">
+                    </div>
+                    <div class="fila">
+                        <label for="Placa">PLACA</label>
+                        <input type="text">
+                    </div>
+                    <div class="fila">
+                        <label for="Tipodevehiculo">TIPO DE VEHÍCULO</label>
+                        <select name="" id="">
+                            <option value="">MOTO</option>
+                            <option value="">CARRO</option>
+                        </select>
+                    </div>
+                    <div class="fila">
+                        <label for="Propietario">PROPIETARIO</label>
+                        <input type="text">
+                    </div>
+                    <div class="fila">
+                        <input type="submit" value="REGISTRAR SALIDA">
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
