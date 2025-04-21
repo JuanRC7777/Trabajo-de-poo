@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balance</title>
+    <title>Registrar vehiculo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,20 +25,36 @@
     </header>
     <div class="contenedor">
         <form action="">
-            <h1>Balance</h1>
+            <h1>Registro</h1>
             <div class="formgrupo">
-                <label for="inputBsemanal">Ingreso semanal:</label>
-                <input type="text" id="inputBsemanal" disabled>
+                <label for="inputhora">Hora de entrada:</label>
+                <input type="text" id="inputhora" >
             </div>
         
             <div class="formgrupo">
-                <label for="inputpBmensual">Ingreso Mensual:</label>
-                <input type="text" id="inputpBmensual" disabled>
+                <label for="inputplaca">Placa:</label>
+                <input type="text" id="inputplaca" >
             </div>
         
             <div class="formgrupo">
-                <label for="inputBdiairo">Ingreso diario:</label>
-                <input type="text" id="inputBdiairo" disabled >
+                <label for="inputtipov">Tipos de vehiculo:</label>
+                <select id="inputipov" name="vehiculo">
+                    <option value="">Selecciona uno</option>
+                    <option value="carro">Carro</option>
+                    <option value="moto">Moto</option>
+                    <option value="bicicleta">Bicicleta</option>
+                    <option value="camion">Camión</option>
+                  </select>
+            </div>
+
+            <div class="formgrupo">
+                <label for="inputpropietario">Usuario:</label>
+                <input type="text" id="inputplaca" >
+            </div>
+
+            <div class="formgrupo">
+                <button type="submit">Registrar</button>
+                <button type="submit">Mensual</button>
             </div>
         </form>
     </div>

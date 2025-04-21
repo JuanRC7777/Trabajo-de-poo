@@ -2,49 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retirar</title>
-    <link rel="stylesheet" href="retirar.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="contenedor">
-        <div id="imagen">
+    <header class="header">
+        <div class="logo">
+            <img src="/img/logo.png" alt="Logo de la empresa">
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="Registra.html">Registrar</a></li>
+                <li><a href="Retirar.html">Retirar</a></li>
+                <li><a href="Administrar.html">Administrar vehiculos</a></li>
+                <li><a href="Balance.html">Balance</a></li>
+                <li><a href="Cobros.html">% Cobro</a></li>
 
-        </div>
-        <div id="menu">
-            <div id="ventanas">
-                <button onclick="mostrarSeccion('registrar')">Registrar Vehículo</button>
-                <button id="seleccion" onclick="mostrarSeccion('retirar')">Retirar Vehículo</button>
-                <button onclick="mostrarSeccion('administrar')">Administrar Vehículos</button>
-                <button onclick="mostrarSeccion('Balance')">Balance</button>
+           </ul>            
+        </nav>
+        <a class="btn" href="#"><button>Salir</button></a>
+    </header>
+    <div class="contenedor">
+        <form action="">
+            <h1>Retirar vehiculo</h1>
+            <div class="formgrupo">
+                <label for="inputhoras">Hora de salidad:</label>
+                <input type="text" id="inputhoras" >
             </div>
-            <div id="panel">
-                <h2>RETIRAR VEHICULO</h2><br>
-                <form action="">
-                    <div class="fila">
-                        <label for="Horaentrada">HORA. SALID</label>
-                        <input type="text">
-                    </div>
-                    <div class="fila">
-                        <label for="Placa">PLACA</label>
-                        <input type="text">
-                    </div>
-                    <div class="fila">
-                        <label for="Tipodevehiculo">TIPO DE VEHÍCULO</label>
-                        <select name="" id="">
-                            <option value="">MOTO</option>
-                            <option value="">CARRO</option>
-                        </select>
-                    </div>
-                    <div class="fila">
-                        <label for="Propietario">PROPIETARIO</label>
-                        <input type="text">
-                    </div>
-                    <div class="fila">
-                        <input type="submit" value="REGISTRAR SALIDA">
-                    </div>
+        
+            <div class="formgrupo">
+                <label for="inputplaca">Placa:</label>
+                <input type="text" id="inputplaca" >
             </div>
-        </div>
+        
+            <div class="formgrupo">
+                <label for="inputtipov">Tipo de vehiculo:</label>
+                <input type="text" id="inputtipov" disabled >
+            </div>
+
+            <div class="formgrupo">
+                <label for="inputpropietario">Usuario:</label>
+                <input type="text" id="inputplaca" disabled>
+            </div>
+
+            <div class="formgrupo">
+                <button type="submit">Retirar</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>
